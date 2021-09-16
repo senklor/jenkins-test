@@ -11,6 +11,7 @@ pipeline {
                 script {
                     def now = new Date()
                     println 'triggered: ' + now.format("yyMMdd.HHmm", TimeZone.getTimeZone('UTC'))
+                    log.info("theodor")
                 }
             }
         }
